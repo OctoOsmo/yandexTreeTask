@@ -25,7 +25,11 @@ public class Main {
         }
         TreeNode<Integer> successor = printSuccessor(balancedTree, values.get(values.size() - 1));
         System.out.println(successor == null);
-        System.out.println("Done");
+        System.out.println("Tree is Done");
+
+        TopFrequentFinder topFrequentFinder = new TopFrequentFinder();
+        List<Integer> kFrequent = topFrequentFinder.topKFrequent(Arrays.asList(5, 5, 5, 5, 5, 1, 1, 1, 2, 2, 6, 6, 6), 2);
+        System.out.println(kFrequent);
     }
 
     private static TreeNode<Integer> printSuccessor(TreeNode<Integer> balancedTree, int startValue) {
