@@ -1,9 +1,12 @@
+package tree;
+
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static junit.framework.TestCase.*;
+import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertNull;
 
 public class TreeTest {
     List<Integer> values = Arrays.asList(1, 2, 3, 6, 10, 12, 21, 22, 29, 33, 64, 65, 66, 70, 78, 101, 111, 123, 345, 355, 444, 541);
@@ -11,7 +14,7 @@ public class TreeTest {
     TreeGenerator<Integer> treeGenerator = new TreeGenerator<>();
 
     @Test
-    public void treeTest() {
+    public void test() {
         TreeNode<Integer> balancedTree = treeGenerator.buildBalancedTree(values, null);
 
         for (int i = 0; i < values.size() - 1; i++) {

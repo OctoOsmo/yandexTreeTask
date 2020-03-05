@@ -1,3 +1,5 @@
+package tree;
+
 public class TreeNode<T> implements Node<T> {
     private TreeNode<T> parent;
     private TreeNode<T> left;

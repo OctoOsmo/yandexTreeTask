@@ -1,3 +1,5 @@
+package tree;
+
 public interface Node<T> {
     Node<T> getParent();
 

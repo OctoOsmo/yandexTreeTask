@@ -1,4 +1,4 @@
-import javafx.util.Pair;
+package frequent;
 
 import java.util.ArrayList;
 import java.util.HashMap;

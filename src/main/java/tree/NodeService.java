@@ -1,3 +1,5 @@
+package tree;
+
 public class NodeService<T extends Integer> {
 
     public TreeNode<T> findByValue(T value, TreeNode<T> rootNode) {
